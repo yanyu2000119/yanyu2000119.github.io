@@ -107,7 +107,7 @@ pre {
 }
 
 .code-area::after {
-    content: " ";
+  /*  content: " ";*/
     position: absolute;
     border-radius: 50%;
     background: #ff5f56;
