@@ -261,7 +261,7 @@ mark {
     position: fixed;
     bottom: 0;
     z-index: 300;
-    background: linear-gradient(to right, #4cbf30 0%, #0f9d58 100%);
+    background: linear-gradient(to right, #0f9d58 100%, #0f9d58 100%);
     opacity: 0.8;
 }
 
@@ -1302,7 +1302,7 @@ thead {
 
 .chip-container .chip-active {
     color: #FFF !important;
-    background: linear-gradient(to bottom right, #FF5E3A 0%, #FF2A68 100%) !important;
+    background: linear-gradient(to bottom right, #FF2A68 100%, #FF2A68 100%) !important;
     box-shadow: 2px 5px 10px #aaa !important;
 }
 
