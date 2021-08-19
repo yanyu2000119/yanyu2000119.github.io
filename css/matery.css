@@ -554,10 +554,10 @@ header .go-back i {
     height: 40vh !important;
 }
 
-.bg-cover:after {
+/*.bg-cover:after {
     -webkit-animation: rainbow 60s infinite;
     animation: rainbow 60s infinite;
-}
+} */
 
 .bg-cover:before,
 .bg-cover:after {
@@ -1967,7 +1967,7 @@ footer .copy-right {
 }
 
 .center-caption {
-    color: #525f7f;
+    color: #7F95D1;
     padding: 5px;
     border-bottom: 1px solid #d9d9d9;
 }
