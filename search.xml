@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title>Markdown的基本语法</title>
+      <link href="/2021/08/20/2/"/>
+      <url>/2021/08/20/2/</url>
+      
+        <content type="html"><![CDATA[<h1 id="Markdown的基本语法"><a href="#Markdown的基本语法" class="headerlink" title="Markdown的基本语法"></a>Markdown的基本语法</h1><h2 id="段落"><a href="#段落" class="headerlink" title="段落"></a>段落</h2><p>非常自然，一个文字就是一个段落。</p><p>比如</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">这是一个段落。</span><br></pre></td></tr></table></figure><p>会被解释成</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;这是一个段落。&lt;/p&gt;</span><br></pre></td></tr></table></figure><p>如果你需要另起一段，请在两个段落之间隔一个空行。</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">这是一个段落。</span><br><span class="line"></span><br><span class="line">这是另一个段落。</span><br></pre></td></tr></table></figure><p>会解释成</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;这是一个段落。&lt;p&gt;</span><br><span class="line"></span><br><span class="line">&lt;p&gt;这是另一个段落&lt;/p&gt;</span><br></pre></td></tr></table></figure><h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h3><p>你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线：</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">***</span><br><span class="line"></span><br><span class="line">* * *</span><br><span class="line"></span><br><span class="line">*****</span><br><span class="line"></span><br><span class="line">- - -</span><br><span class="line"></span><br></pre></td></tr></table></figure><h3 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a>删除线</h3><p>如果段落上的文字要添加删除线，只需要在文字的两端加上两个波浪线[^~~]即可，实例如下:</p><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">RUNOOB.COM</span><br><span class="line">GOOGLE.COM</span><br><span class="line">~~BAIDU.COM~~</span><br></pre></td></tr></table></figure><p>现实效果如下所示</p><p>RUNOOB.COM<br>GOOGLE.COM<br><del>BAIDU.COM</del></p><hr><h3 id="删除线-1"><a href="#删除线-1" class="headerlink" title="删除线"></a>删除线</h3><p>下划线可以通过HTML[^<u>]的标签来实现：</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> Markdown </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>随记</title>
+      <link href="/2021/08/20/1/"/>
+      <url>/2021/08/20/1/</url>
+      
+        <content type="html"><![CDATA[<h1 id="个人感触"><a href="#个人感触" class="headerlink" title="个人感触"></a>个人感触</h1><p>这是我第一次搭建博客，也是第一次在这上面发布文章，这篇文章就单纯拿来记录一下自己的心情。</p><h2 id="工作"><a href="#工作" class="headerlink" title="工作"></a>工作</h2><p>来公司这么久了，感觉学到的东西挺多的，当然，有些东西也多委屈的。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 个人随记 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2021/08/05/hello-world/"/>
       <url>/2021/08/05/hello-world/</url>
