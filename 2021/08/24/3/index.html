@@ -410,21 +410,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-08-27
+                    2021-09-05
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    1.1k
+                    1.3k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    4 分
+                    5 分
                 </div>
                 
 
@@ -620,6 +620,13 @@
 <li><p>如果可行的话，会在应用对第二个请求的响应中向攻击者返回查询结果。</p>
 </li>
 </ol>
+<p>自己的理解:<br>简单来说就是，浏览器识别攻击者创造的第一条SQL语句可执行，并且将它执行。然后，攻击者创造的第一条SQL语句再经过浏览器的识别与执行，从而达到二次注入。</p>
+<hr>
+<h4 id="宽字节注入"><a href="#宽字节注入" class="headerlink" title="宽字节注入"></a>宽字节注入</h4><p><code>宽字节注入的原理</code></p>
+<p>1.数据库为GBK编码<br>2.使用了转义函数，将、POGETST、cookie传递的参数进行过滤，将单引号、双引号、null等敏感字符用转义符 \ 进行转义</p>
+<p><code>绕过方式</code></p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">root %df&#x27; or 1=1 #</span><br></pre></td></tr></table></figure>
+<p>原理:在GBK编码中,反斜杠的编码是%5c,在输入%df后，使得添加反斜杠后形成%df%5c，而%df%5c是繁体字“連”，单引号成功逃逸，爆出Mysql数据库的错误</p>
 <hr>
 
                 
@@ -1180,7 +1187,7 @@
             <br>
             
                 &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                        class="white-color">2.1k</span>
+                        class="white-color">2.3k</span>
             
             
             
