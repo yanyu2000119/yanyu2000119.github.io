@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>学习网站</title>
+      <link href="/2021/09/05/4/"/>
+      <url>/2021/09/05/4/</url>
+      
+        <content type="html"><![CDATA[<h1 id="个人学习网站总结"><a href="#个人学习网站总结" class="headerlink" title="个人学习网站总结"></a>个人学习网站总结</h1><h2 id="安全圈"><a href="#安全圈" class="headerlink" title="安全圈"></a>安全圈</h2><p><a href="https://www.anquanquan.info/" title="安全圈子总结">安全圈子</a></p><h2 id="洞悉漏洞"><a href="#洞悉漏洞" class="headerlink" title="洞悉漏洞"></a>洞悉漏洞</h2><p><a href="https://paper.seebug.org/category/blockchain/" title="洞悉漏洞地址">洞悉漏洞</a></p><h2 id="师傅们"><a href="#师傅们" class="headerlink" title="师傅们"></a>师傅们</h2><p><a href="https://micro8.github.io/Micro8-HTML/Content/Contents.html">mircro8师傅</a></p><p><a href="https://www.smi1e.top/">smile师傅</a></p><p><a href="https://landgrey.me/blog/10/">landgrey师傅</a></p><h2 id="Python学习"><a href="#Python学习" class="headerlink" title="Python学习"></a>Python学习</h2><p><a href="https://www.runoob.com/">菜鸟教程</a></p><p><a href="https://www.w3school.com.cn/">W3C</a></p><p><a href="http://www.nowamagic.net/academy/">现代魔法学院</a></p><p><a href="https://www.iplaypy.com/">玩蛇网</a></p><p>新手推荐<code>菜鸟教程</code>和<code>现代魔法学院</code></p><h2 id="闯关练习"><a href="#闯关练习" class="headerlink" title="闯关练习"></a>闯关练习</h2><p><a href="http://hackinglab.cn/">网络安全实验室</a></p><p><a href="http://www.try2hack.nl/levels/">Try2Hack</a></p><p><a href="https://www.hackthissite.org/">HackThisSite</a></p><p><a href="http://www.gameofhacks.com/">GameofHacks</a></p><p><a href="http://overthewire.org/wargames/">OverThewrit</a></p><p><a href="http://overthewire.org/wargames/">RootMe</a></p><p><a href="http://demo.testfire.net/">Appscan漏扫测试</a></p><p><a href="http://xss-quiz.int21h.jp/">XSSChallenges</a></p><p><a href="http://zero.webappsecurity.com/">Zero漏洞测试</a></p><p><a href="http://www.dvwa.co.uk/">DVWA</a></p><p><a href="http://www.itsecgames.com/">bWAPP</a></p><p><a href="https://vulhub.org/">Vulhub</a></p><p><a href="https://www.vulnhub.com/">VulnHub</a></p><p><a href="https://github.com/Audi-1/sqli-labs">sqli-labs</a></p><p><a href="https://www.hackthebox.eu/">HackTheBox</a></p><p>就我个人而言</p><p>每个人都基础不同，选择的靶场也不同。所以，最好根据自己的基础来选择靶场。</p>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>SQL注入笔记</title>
       <link href="/2021/08/24/3/"/>
       <url>/2021/08/24/3/</url>
