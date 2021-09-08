@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="学习网站, 小宇的博客">
+    <meta name="keywords" content="绕过校园网认证, 小宇的博客">
     <meta name="description" content="">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>学习网站 | 小宇的博客</title>
+    <title>绕过校园网认证 | 小宇的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -266,12 +266,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/2.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">学习网站</h1>
+                    <h1 class="description center-align post-title">绕过校园网认证</h1>
                 </div>
             </div>
         </div>
@@ -387,8 +387,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/%E5%AD%A6%E4%B9%A0/">
-                                <span class="chip bg-color">学习</span>
+                            <a href="/tags/%E6%8A%80%E6%9C%AF/">
+                                <span class="chip bg-color">技术</span>
                             </a>
                         
                     </div>
@@ -403,28 +403,28 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-09-05
+                    2021-09-08
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-09-05
+                    2021-09-08
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    195
+                    1.2k
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-clock fa-fw"></i>阅读时长:&nbsp;&nbsp;
-                    1 分
+                    4 分
                 </div>
                 
 
@@ -444,42 +444,94 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="个人学习网站总结"><a href="#个人学习网站总结" class="headerlink" title="个人学习网站总结"></a>个人学习网站总结</h1><h2 id="安全圈"><a href="#安全圈" class="headerlink" title="安全圈"></a>安全圈</h2><p><a target="_blank" rel="noopener" href="https://www.anquanquan.info/" title="安全圈子总结">安全圈子</a></p>
+                <h4 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h4><p>现在的学校校园网基本上都是有网页认证的，你需要去买营业厅的流量，它才会给你账号和密码。<br>最可气的是，它还只能连一个，这意味着你电脑连了，手机就不能连。<br>看吧，营业厅就是这么坑。</p>
+<p>但是!哪里有压迫，哪里就有反抗!<br>经过在网上不断的找资料查询，发现过很多绕过校园网认证的方法，下面就是方法的其中几种。</p>
 <hr>
-<h2 id="洞悉漏洞"><a href="#洞悉漏洞" class="headerlink" title="洞悉漏洞"></a>洞悉漏洞</h2><p><a target="_blank" rel="noopener" href="https://paper.seebug.org/category/blockchain/" title="洞悉漏洞地址">洞悉漏洞</a></p>
+<h1 id="绕过校园网认证的方法"><a href="#绕过校园网认证的方法" class="headerlink" title="绕过校园网认证的方法"></a>绕过校园网认证的方法</h1><h2 id="通过vps的流量转接"><a href="#通过vps的流量转接" class="headerlink" title="通过vps的流量转接"></a>通过vps的流量转接</h2><ul>
+<li>需要准备的材料</li>
+</ul>
+<ol>
+<li>一台国内的vps</li>
+<li>openvpn，SoftEtherVPN</li>
+<li>一台电脑</li>
+</ol>
 <hr>
-<h2 id="师傅们"><a href="#师傅们" class="headerlink" title="师傅们"></a>师傅们</h2><p><a target="_blank" rel="noopener" href="https://micro8.github.io/Micro8-HTML/Content/Contents.html">mircro8师傅</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.smi1e.top/">smile师傅</a></p>
-<p><a target="_blank" rel="noopener" href="https://landgrey.me/blog/10/">landgrey师傅</a></p>
+<h4 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h4><p>连上那些公共热点，往往都能成功，但是也往往还需要进一步的认证才能够上网。没有认证的时，当我们访问http的网站时，我们的请求会被拦截并跳转至热点的登录认证页面。但是，如果直接访问https的话，就是响应超时了，原因应该是https的一些加密导致的吧。</p>
+<p>但是，当我用nmap扫它们时发现，很多需要认证的网站的端口都是开着的。<br>如下所示</p>
+<table>
+<thead>
+<tr>
+<th>端口</th>
+<th align="center">描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>53/UDP</td>
+<td align="center">DNS（域名服务系统</td>
+</tr>
+<tr>
+<td>67/UDP</td>
+<td align="center">BOOTP（BootStrap协议）服务；同时用于动态主机设置协议</td>
+</tr>
+<tr>
+<td>68/UDP</td>
+<td align="center">BOOTP 客户端；同时用于动态主机设定协议</td>
+</tr>
+<tr>
+<td>69/UDP</td>
+<td align="center">TFTP（小型文件传输协议)</td>
+</tr>
+</tbody></table>
+<p>上面端口基本上是数据的传输，这样就方便我们连接。</p>
 <hr>
-<h2 id="Python学习"><a href="#Python学习" class="headerlink" title="Python学习"></a>Python学习</h2><p><a target="_blank" rel="noopener" href="https://www.runoob.com/">菜鸟教程</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.w3school.com.cn/">W3C</a></p>
-<p><a target="_blank" rel="noopener" href="http://www.nowamagic.net/academy/">现代魔法学院</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.iplaypy.com/">玩蛇网</a></p>
-<p>新手推荐<code>菜鸟教程</code>和<code>现代魔法学院</code></p>
+<h3 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h3><ul>
+<li>服务器端</li>
+</ul>
+<p>这里以我在阿里云上白嫖的centos为例，默认gcc环境等依赖安装完成。</p>
+<p>ssh登录服务器后，下载vpnserver</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://github.com/SoftEtherVPN/SoftEtherVPN_Stable/releases/download/v4.28-9669-beta/softether-vpnserver-v4.28-9669-beta-2018.09.11-linux-x64-64bit.tar.gz</span><br></pre></td></tr></table></figure>
+
+<p>解压</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">tar -zxvf softether-vpnserver-v4.28-9669-beta-2018.09.11-linux-x64-64bit.tar.gz</span><br></pre></td></tr></table></figure>
+
+<p>cd到对应目录，<code>make</code>编译</p>
+<p>此时提示输入，一路输入1 即yes就是了。</p>
+<p>启动该服务</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./vpnserver start</span><br></pre></td></tr></table></figure>
+
+<p>然后</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./vpncmd</span><br></pre></td></tr></table></figure>
+
+<p>输入1之后两次回车，后面会提示输入密码。(自己设置个密码就好了，设置的密码要记住，后面要用。)</p>
 <hr>
-<h2 id="闯关练习"><a href="#闯关练习" class="headerlink" title="闯关练习"></a>闯关练习</h2><p><a target="_blank" rel="noopener" href="http://hackinglab.cn/">网络安全实验室</a></p>
-<p><a target="_blank" rel="noopener" href="http://www.try2hack.nl/levels/">Try2Hack</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.hackthissite.org/">HackThisSite</a></p>
-<p><a target="_blank" rel="noopener" href="http://www.gameofhacks.com/">GameofHacks</a></p>
-<p><a target="_blank" rel="noopener" href="http://overthewire.org/wargames/">OverThewrit</a></p>
-<p><a target="_blank" rel="noopener" href="http://overthewire.org/wargames/">RootMe</a></p>
-<p><a target="_blank" rel="noopener" href="http://demo.testfire.net/">Appscan漏扫测试</a></p>
-<p><a target="_blank" rel="noopener" href="http://xss-quiz.int21h.jp/">XSSChallenges</a></p>
-<p><a target="_blank" rel="noopener" href="http://zero.webappsecurity.com/">Zero漏洞测试</a></p>
-<p><a target="_blank" rel="noopener" href="http://www.dvwa.co.uk/">DVWA</a></p>
-<p><a target="_blank" rel="noopener" href="http://www.itsecgames.com/">bWAPP</a></p>
-<p><a target="_blank" rel="noopener" href="https://vulhub.org/">Vulhub</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.vulnhub.com/">VulnHub</a></p>
-<p><a target="_blank" rel="noopener" href="https://github.com/Audi-1/sqli-labs">sqli-labs</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.hackthebox.eu/">HackTheBox</a></p>
-<p>就我个人而言</p>
-<p>每个人都基础不同，选择的靶场也不同。所以，最好根据自己的基础来选择靶场。</p>
+<h3 id="客户端"><a href="#客户端" class="headerlink" title="客户端"></a>客户端</h3><p>下载<a target="_blank" rel="noopener" href="https://raw.githubusercontent.com/asche910/FreeWireless/master/openvpn-install-2.4.7-I607-Win10.exe">SoftEtherVPN</a>并安装。<br>安装时，选择最下面的<code>SoftEtherVPN server 管理工具(仅限管理工具)</code><br><img src="/images/2.jpg" alt="如图"></p>
+<p>完成安装后如图<br><img src="/images/3.jpg"></p>
+<p>点击新设置，填写相关信息。名称随便填，主机名就填你之前的服务器地址，下面端口默认端口443。右下角的密码就是刚才设置的vpnserver的密码。<br>然后点击确定。<br><img src="/images/4.jpg"></p>
+<p>然后点击<code>管理虚拟HUB</code><br><img src="/images/5.jpg"></p>
+<p>然后点击<code>管理用户</code><br><img src="/images/6.jpg"></p>
+<p>然后再新建个用户名和密码。<br>这个用户名和密码要记住，这时你后面连接需要用到的。<br><img src="/images/7.jpg"></p>
+<p>确认之后会弹框显示成功，紧接着点击<code>虚拟NAT和虚拟DHCP</code><br><img src="/images/8.jpg"></p>
+<p>然后点击启用<br><img src="/images/9.jpg"></p>
+<p>点击确认之后回到管理界面，点击下图中的<br><img src="/images/10.jpg"></p>
+<p>然后填写端口。（这里推荐填写53，66，67，69端口。）<br>然后点击下面那个生成配置文件。（生成的配置文件是压缩包格式，需要自己解压放在一个文件里面，等会儿连接的时候要用。）<br><img src="/images/11.jpg"></p>
+<p>然后下载安装openvpn。安装完成之后右键点击任务栏的小电脑（那是openvpn的图标）选择导入配置文件。</p>
+<p>导入成功后右键点击小电脑，这时会出现一个你刚才导入文件的选项，选择连接即可。</p>
+<p>最后会有一个用户名和密码的提示框弹出来，这时候输入你刚才添加的用户名和密码即可。</p>
+<p>连接之后入下图所示<br><img src="/images/1.jpg"></p>
+<p>这时应该就可以未认证免费上网了。速度的话基本取决于你服务器的带宽。比如我的是3Mb速度，实际就是1Mb左右吧。</p>
 <hr>
-<h2 id="web安全笔记"><a href="#web安全笔记" class="headerlink" title="web安全笔记"></a>web安全笔记</h2><p><a target="_blank" rel="noopener" href="https://websec.readthedocs.io/zh/latest/">大佬总结的笔记</a></p>
-<p>这个大佬总结的很全面，特别适合提升自己的技术。</p>
-<p>我就是，看了大佬的文章，然后自己结合靶场来熟练技术。</p>
+<p>上面就是Windows的方法，还有Android和ios端的。</p>
+<p>Android端的安装包，可以在我的github中下载。<br><a target="_blank" rel="noopener" href="https://github.com/yanyu2000119/tool/blob/master/ics-openvpn-0.7.24.apk">github</a></p>
+<p>ios的我没用过，暂时没有去找，需要自己上百度找。</p>
 <hr>
+<h5 id="搭建过程中遇到的问题"><a href="#搭建过程中遇到的问题" class="headerlink" title="搭建过程中遇到的问题"></a>搭建过程中遇到的问题</h5><p>搭建的时候也遇到不少问题，总的来说就是<br> openvpn连接报错，报错的内容大概就是，没开端口，握手失败，多久后重试之类的。（开始我还是只开那几个端口，后来嫌麻烦，直接把所有端口都开了。<br>）</p>
+<p>最后，感谢大佬的分享<br>参考博客</p>
+<ol>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/Asnet_/article/details/100408034?utm_source=app&amp;app_version=4.14.0&amp;code=app_1562916241&amp;uLinkId=usr1mkqgl919blen">https://blog.csdn.net/Asnet_/article/details/100408034?utm_source=app&amp;app_version=4.14.0&amp;code=app_1562916241&amp;uLinkId=usr1mkqgl919blen</a></li>
+<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/qq_35422558/article/details/84316063">https://blog.csdn.net/qq_35422558/article/details/84316063</a></li>
+</ol>
+<hr>
+<p>今天就先记录这个方法了，后面的有时间再写。</p>
 
                 
             </div>
@@ -506,7 +558,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://example.com/2021/09/05/4/">http://example.com/2021/09/05/4/</a>
+                    <a href="http://example.com/2021/09/08/%E7%BB%95%E8%BF%87%E6%A0%A1%E5%9B%AD%E7%BD%91%E8%AE%A4%E8%AF%81/">http://example.com/2021/09/08/%E7%BB%95%E8%BF%87%E6%A0%A1%E5%9B%AD%E7%BD%91%E8%AE%A4%E8%AF%81/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -544,8 +596,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/%E5%AD%A6%E4%B9%A0/">
-                                    <span class="chip bg-color">学习</span>
+                                <a href="/tags/%E6%8A%80%E6%9C%AF/">
+                                    <span class="chip bg-color">技术</span>
                                 </a>
                             
                         </div>
@@ -983,9 +1035,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2021/09/08/%E7%BB%95%E8%BF%87%E6%A0%A1%E5%9B%AD%E7%BD%91%E8%AE%A4%E8%AF%81/">
                     <div class="card-image">
@@ -1003,9 +1056,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-09-08
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-08
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -1014,6 +1067,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -1032,13 +1086,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2021/08/24/3/">
+                <a href="/2021/09/05/4/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/1.jpg" class="responsive-img" alt="SQL注入笔记">
+                        <img src="/medias/featureimages/2.jpg" class="responsive-img" alt="学习网站">
                         
-                        <span class="card-title">SQL注入笔记</span>
+                        <span class="card-title">学习网站</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -1049,7 +1103,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-08-24
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-09-05
                             </span>
                         <span class="publish-author">
                             
@@ -1062,8 +1116,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/%E5%AD%A6%E4%B9%A0-web%E5%AE%89%E5%85%A8/">
-                        <span class="chip bg-color">学习   web安全</span>
+                    <a href="/tags/%E5%AD%A6%E4%B9%A0/">
+                        <span class="chip bg-color">学习</span>
                     </a>
                     
                 </div>
